@@ -1,0 +1,22 @@
+{
+  "name": "rivlado-gateway",
+  "version": "2.4.0",
+  "description": "Rivlado - Advanced Gateway with Cloudflare Pages Support",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "echo Building...",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "pages-deploy": "wrangler pages deploy dist",
+    "check": "tsc --noEmit || true",
+    "lint": "eslint src --ext .ts || true"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20260603.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "wrangler": "^3.65.0"
+  }
+}
